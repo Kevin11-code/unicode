@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1889bfccaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Gateway</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Payment Form</h1>
+        <p>Required fields are followed by*</p>
+        <form action="">
+            <div class="contact">
+                <h2>Contact Information</h2>
+                <label for="name">Name:*</label>
+                <input type="text" name="name" required>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <span>Male</span> <input type="radio" name="gender" id="male">
+                    <span>Female</span> <input type="radio" name="gender" id="female"> 
+                    <span>Transgender</span> <input type="radio" name="gender" id="trans">
+                </fieldset>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="110" rows="9"></textarea>
+                <label for="email">Email:* </label>
+                <input type="email" name="email" id="email" required> 
+                <label for="pincode">Pincode:* </label>
+                <input type="number" name="pincode" id="pincode" required>
+            </div>
+            <div class="payment">
+                <p><h2>Payment Information</h2></p>
+                <div class="row1">
+                    <label for="card">Card Type:*</label>
+                    <select name="card_name" id="card_name">
+                        <option value="">----Select a card type----</option>
+                        <option value="visa"><i class="fab fa-cc-visa">Visa</i></option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="rupay">Rupay</option>
+                    </select> 
+                </div>
+                <div class="row2">
+                    <label for="card_no">Card Number:*</label>
+                    <input type="number" name="card_no." id="card_no." required>
+                </div>
+                <div class="row3">
+                    <div class="col1">
+                        <label for="exp_date">Expiration Date:*</label>
+                        <input type="date" name="exp_date" id="exp_date" required>
+                    </div> 
+                    <div class="col2">
+                    <label for="cvv">CVV:*</label>
+                    <input type="password" name="cvv" id="cvv" required></p>
+                    </div>
+                </div>
+            </div>
+            <p><input type="submit" value="Pay now">
+            <input type="reset" value="Reset"></p>
+        </form>
+    </div>
+</body>
+</html>
